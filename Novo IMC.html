@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcule seu IMC</title>
+</head>
+<body>
+	<div class="mini">
+		<link rel="stylesheet" type="text/css" href="Novo IMC.css">
+		<form action="" method="get">
+
+			<h3>Calcule seu IMC</h3>
+
+			<div class="altura">
+				<h4>Digite a altura</h4>
+				<input type="text" id="altura" placeholder="  Ex.: 1.73"> 
+				<h6 class="me">Metros</h6>
+			</div>
+
+			<div class="peso">
+				<h4>Digite o peso</h4>
+				<input type="text" id="peso" placeholder="  Ex.: 53.5"> 
+				<h6 class="kg">Kg</h6> 
+			</div>
+
+			<input type="button" value="Calcular IMC" class="calc" onclick="calcular()"> </br>
+
+			<input type="text" id="resultado" placeholder="  Resultado do calculo"> 
+			<h6 class="res">IMC</h6>
+
+			<div class="sexo">
+				<h4>Escolha o sexo</h4>
+				<input type="button" value="Feminino" class="mul" id="mul" onclick="Mulher()">
+				<input type="button" value="Masculino" class="hom" id="hom" onclick="Homem()">
+			</div>
+
+			<input type="reset" value="limpar" class="mao" onclick="limpar()">
+
+		</form>
+	</div>
+	<script type="text/javascript" src="Novo IMC.js"></script>
+</body>
+</html>
